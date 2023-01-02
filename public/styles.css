@@ -1,0 +1,220 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Open sans, Montserrat, sans-serif;
+    /* background-color: #fff; */
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  #root, .root-container {
+    width: 100vw !important;
+    height: 100vh !important;
+   
+  }
+  
+
+  .blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+
+
+
+  /* ************************* Header Component Css ******************** */
+  header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    /* background-color: #f5ba13; */
+    margin: 0;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  header h1 {
+    color: #5f6368;
+    font-weight: 100;
+  }
+  
+  /* **************************** Creator Component CSS *********************** */
+  .creator-container {
+    max-width: 600px;
+    margin: 32px auto 16px auto;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 16px;
+  }
+  
+
+  .creator-input {
+    display: block;
+    border: solid transparent;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 0 8px;
+    width: 100%;
+    letter-spacing: 0.04rem;
+    word-break: break-word;
+  }
+  
+  .input-title {
+    height: 32px;
+    background-color: transparent;
+    
+  }
+  
+  .creator-input:focus {
+    outline: none;
+  }
+  
+  
+  .btn-add-note {
+    display: block;
+    height: 48px;
+    min-width: 48px;
+    margin: 16px 16px 16px 8px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f5ba139e;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .btn-add-note:hover {
+    background-color:  #f5ba13;
+    cursor: pointer;
+  }
+  textarea {
+    resize: none;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: transparent;
+  }
+  
+  
+  /* ****************************** Keep Component CSS ************************* */
+  .notes-container {
+  
+    display: flex;
+    column-gap: 4px;
+    row-gap: 4px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 8px;
+    align-items: start;
+  
+  }
+
+  .parent-note-container {
+    position: relative;
+    width: 240px;
+  }
+  .note {
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    word-wrap: break-word;
+    /* background-color: #fff; */
+  
+  }
+  .note:hover {
+    box-shadow: 0 2px 5px #ccc;
+    
+  }
+  
+  .note-title {
+    min-height: 30px;
+  }
+  .note-desc-p {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+    padding: 0 8px 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    word-wrap: break-word;
+  }
+  .note-title-h1 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 0 8px 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    word-wrap: break-word;
+  }
+  .note-desc {
+    min-height: 34px;
+  }
+
+  .update-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .push-left {
+    display: flex;
+  }
+  
+  .btn-delete {
+    background-color: #fff;
+    color: #f5ba139e;
+    margin: 32px 0 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+  }
+  .btn-delete:hover {
+    background-color: #fff;
+    color: #f5ba13;
+  }
+  
+  /******************************** Empty Note CSS ********************************* */
+  
+  .empty-msg-container {
+  
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .empty-note {
+    color: #5f6368;
+    font-size: 1.35rem;
+    font-weight: 400;
+  }
+  
+  /* ***************************** Footer Component CSS ************************* */
+  footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+  }
+  
+  footer p {
+    color: #ccc;
+  }
+  
